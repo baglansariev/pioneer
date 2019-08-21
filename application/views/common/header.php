@@ -43,6 +43,13 @@
             </span>
         </div>
     </div>
-    <div class="header-bottom"></div>
+    <div class="header-bottom">
+        <div class="container">
+            <a href="">
+                Позвонить сейчас:
+                <span>+30 1234 56789</span>
+            </a>
+        </div>
+    </div>
 </header>
 <!-- https://www.cssigniter.com/preview/oikia -->
