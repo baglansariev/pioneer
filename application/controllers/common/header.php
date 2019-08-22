@@ -6,6 +6,10 @@
 	{
 		public function index()
 		{
-			return $this->load->view('common/header');
+		    $header_model = $this->load->model('common/header');
+		    $data = array();
+		    $data['menu_list'] = $header_model->getMenuList();
+
+			return $this->load->view('common/header', $data);
 		}
 	}

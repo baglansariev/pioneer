@@ -2,7 +2,7 @@
 	ini_set('display_errors', 1);
 	error_reporting(E_ALL);
 
-	function devPrint($var){
+	function devPrint($var, $exit = false){
 		if(is_array($var)){
 			echo '<pre>';
 			print_r($var);
@@ -11,9 +11,11 @@
 		else{
 			echo '<pre>'. $var .'</pre>';
 		}
+
+		if($exit) exit;
 	}
 
-	function dump($var){
+	function dump($var, $exit = false){
 		if(is_array($var)){
 			echo '<pre>';
 			var_dump($var);
@@ -22,6 +24,8 @@
 		else{
 			echo '<pre>'. $var .'</pre>';
 		}
+
+		if($exit) exit;
 	}
 
 	function obInclude($path){

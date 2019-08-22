@@ -16,23 +16,19 @@
     </div>
     <div class="header-mid">
         <div class="container">
-            <div class="main-logo">
-                <img src="" alt="">
-            </div>
+            <a href="/" class="main-logo">
+                <img src="/public/images/logo-mobile.png" alt="">
+            </a>
+            <a href="/" class="main-desktop-logo">
+                <img src="/public/images/logo-desktop.png" alt="">
+            </a>
             <nav class="desktop-menu">
                 <ul>
-                    <li>
-                        <a href="">Главная</a>
-                    </li>
-                    <li>
-                        <a href="">О нас</a>
-                    </li>
-                    <li>
-                        <a href="">Новости</a>
-                    </li>
-                    <li>
-                        <a href="">Контакты</a>
-                    </li>
+                    <?php foreach ($menu_list as $menu): ?>
+                        <li>
+                            <a href="<?php echo $menu['url'] ?>"><?php echo $menu['name'] ?></a>
+                        </li>
+                    <?php endforeach ?>
                     <li>
                         <a href="" id="feedback">Заказать звонок</a>
                     </li>
@@ -51,5 +47,20 @@
             </a>
         </div>
     </div>
+    <nav class="mobile-menu">
+        <ul>
+            <?php foreach ($menu_list as $menu): ?>
+                <li>
+                    <a href="<?php echo $menu['url'] ?>"><?php echo $menu['name'] ?></a>
+                </li>
+            <?php endforeach ?>
+            <li>
+                <a href="" id="mobile-feedback">Заказать звонок</a>
+            </li>
+        </ul>
+        <span class="menu-close">
+            <i class="fas fa-times"></i>
+        </span>
+    </nav>
 </header>
 <!-- https://www.cssigniter.com/preview/oikia -->

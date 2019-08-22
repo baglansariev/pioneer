@@ -17,6 +17,7 @@
 	define('DB_HOST', 'localhost');
 	define('DB_USERNAME', 'root');
 	define('DB_PASSWORD', '');
-	define('DB_DATABASE', 'bandura');
+	define('DB_DATABASE', 'pioneer');
+	define('DB_PREFIX', 'st_');
 
 	define('DS', DIRECTORY_SEPARATOR);
