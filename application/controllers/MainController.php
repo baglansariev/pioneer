@@ -17,7 +17,9 @@
 
 
 	    	$data['simple_slider'] = $this->load->controller('modules/simpleSlider');
-	    	$data['products'] = $this->load->controller('modules/products')->getList();
+	    	$data['products'] = $this->load->controller('modules/products')->getList(4);
+	    	$data['call_to_action'] = $this->load->controller('modules/callToAction');
+	    	$data['latest_news'] = $this->load->controller('modules/news')->getList();
 	    	$data['header'] = $this->load->controller('common/header');
 	    	$data['footer'] = $this->load->controller('common/footer');
 

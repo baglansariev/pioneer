@@ -4,7 +4,7 @@
 
     class Products extends Model
     {
-        public function getList($limit)
+        public function getList($limit = false)
         {
             $sql = "SELECT "
                 . DB_PREFIX . "product.name AS product_name, "
@@ -19,6 +19,13 @@
                 LEFT JOIN " . DB_PREFIX . "product_type 
                 ON " . DB_PREFIX . "type_to_product.type_id = " . DB_PREFIX . "product_type.id 
                 ";
+
+            if(!empty($limit['from']) && !empty($limit['to'])){
+                $sql .= "LIMIT " . $limit['from'] . ", " . $limit['to'];
+            }
+            else if((int)$limit){
+                $sql .= "LIMIT " . $limit;
+            }
 
             return $this->db->getAllRows($sql);
         }

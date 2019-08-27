@@ -4,7 +4,7 @@
 
     class Products extends Controller
     {
-        public function getList($limit = 4)
+        public function getList($limit = false)
         {
             $data = array();
             $product_model = $this->load->model('modules/products');
