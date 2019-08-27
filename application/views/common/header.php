@@ -11,6 +11,9 @@
                 <a href="">
                     <i class="fas fa-envelope"></i>
                 </a>
+                <a href="">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -62,5 +65,6 @@
             <i class="fas fa-times"></i>
         </span>
     </nav>
+    <?php echo $popup_form ?>
 </header>
 <!-- https://www.cssigniter.com/preview/oikia -->

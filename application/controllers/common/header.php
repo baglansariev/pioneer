@@ -9,6 +9,7 @@
 		    $header_model = $this->load->model('common/header');
 		    $data = array();
 		    $data['menu_list'] = $header_model->getMenuList();
+		    $data['popup_form'] = $this->load->controller('modules/popupContactForm');
 
 			return $this->load->view('common/header', $data);
 		}
