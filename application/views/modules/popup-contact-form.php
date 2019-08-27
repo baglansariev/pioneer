@@ -9,8 +9,11 @@
             <input type="text" name="client_captcha" placeholder="3 x 3 = ?" required>
         </div>
         <div class="client-data">
-            <textarea name="client_text"></textarea>
+            <textarea name="client_text" placeholder="Сообщение"></textarea>
         </div>
         <input id="popup_send" type="submit" value="Отправить">
+        <span class="form-close">
+            <i class="fas fa-times"></i>
+        </span>
     </form>
 </div>
