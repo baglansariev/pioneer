@@ -113,6 +113,7 @@ header{
 .main-logo img{
 	width: 100%;
 	height: auto;
+	display: none;
 }
 .desktop-menu{
 	height: 100%;
@@ -408,6 +409,9 @@ footer .container{
 	}
 	.mobile-menu-toggler{
 		display: block;
+	}
+	.main-logo img{
+		display: inline;
 	}
 }
 @media screen and (max-width: 767px){
