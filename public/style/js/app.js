@@ -5,4 +5,5 @@ $(function(){
     $('.menu-close').click(function () {
         $('.mobile-menu').fadeOut();
     });
+
 });
