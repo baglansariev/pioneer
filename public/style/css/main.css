@@ -42,25 +42,29 @@ header{
 	align-items: center;
 }
 .header-social-icons{
+	font-size: 15px;
 	height: 100%;
 	display: flex;
 	align-items: center;
+	margin-left: 30px;
+	color: #888;
 }
 .header-social-icons a{
 	display: flex;
 	align-items: center;
 	height: 100%;
 	padding: 0 8px;
-	border-right: 1px solid #595759;
+	border-right: 1px solid #888;
 }
 .header-social-icons a:first-of-type{
-	border-left: 1px solid #595759;
+	border-left: 1px solid #888;
 }
 .header-mid{
 	width: 100%;
-	height: 70px;
-	background-color: #373737;
+	height: 100px;
+	background-color: #FFDC01;
 	position: relative;
+	/*border-bottom: 1px solid #E30016;*/
 }
 .header-mid::after{
 	content: '';
@@ -69,7 +73,7 @@ header{
 	background-color: #B30012;
 	position: absolute;
 	left: -20px;
-	top: -30px;
+	top: 0px;
 	-webkit-transform: skew(-17deg, 0);
 	-moz-transform: skew(-17deg, 0);
 	-ms-transform: skew(-17deg, 0);
@@ -91,7 +95,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	left: -30px;
-	top: -30px;
+	top: 0px;
 	z-index: 4;
 	-webkit-transform: skew(-27deg, 0);
 	-moz-transform: skew(-27deg, 0);
@@ -124,6 +128,8 @@ header{
 	align-items: center;
 	list-style-type: none;
 	color: #fff;
+	font-size: 17px;
+	font-weight: bold;
 }
 .desktop-menu ul li a{
 	padding: 10px 15px;
@@ -142,14 +148,24 @@ header{
 #feedback{
 	background-color: #E30016;
 	margin-left: 20px;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-ms-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+}
+#feedback:hover{
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
 }
 .mobile-menu-toggler{
 	cursor: pointer;
 	color: #fff;
 	font-size: 18px;
 	padding: 5px 10px;
-	background-color: #212223;
-	border: 2px solid #595759;
+	background-color: #E30016;
+	border: 2px solid #E30016;
 	-webkit-transition: all ease 0.4s;
 	-moz-transition: all ease 0.4s;
 	-ms-transition: all ease 0.4s;
@@ -158,7 +174,7 @@ header{
 	display: none;
 }
 .mobile-menu-toggler:hover{
-	color: #E30016;
+	color: #FFDC01;
 }
 .mobile-menu{
 	top: 0;
@@ -225,7 +241,7 @@ header{
 .header-bottom{
 	width: 100%;
 	height: 30px;
-	background-color: #EBEBEB;
+	background-color: #fff;
 	font-size: 12px;
 }
 .header-bottom .container{
@@ -233,6 +249,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	color: #888;
 }
 .header-bottom .container a span{
 	font-weight: bold;

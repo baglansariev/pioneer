@@ -1,22 +1,22 @@
 <header id="header">
-    <div class="header-top">
-        <div class="container">
-            <div class="header-social-icons">
-                <a href="">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-vk"></i>
-                </a>
-                <a href="">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-        </div>
-    </div>
+<!--    <div class="header-top">-->
+<!--        <div class="container">-->
+<!--            <div class="header-social-icons">-->
+<!--                <a href="">-->
+<!--                    <i class="fab fa-instagram"></i>-->
+<!--                </a>-->
+<!--                <a href="">-->
+<!--                    <i class="fab fa-vk"></i>-->
+<!--                </a>-->
+<!--                <a href="">-->
+<!--                    <i class="fas fa-envelope"></i>-->
+<!--                </a>-->
+<!--                <a href="">-->
+<!--                    <i class="fab fa-whatsapp"></i>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="header-mid">
         <div class="container">
             <a href="/" class="main-logo">
@@ -48,6 +48,20 @@
                 Позвонить сейчас:
                 <span>+30 1234 56789</span>
             </a>
+            <div class="header-social-icons">
+                <a href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
         </div>
     </div>
     <nav class="mobile-menu">
