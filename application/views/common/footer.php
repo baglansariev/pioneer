@@ -39,9 +39,10 @@
                     <div class="footer-top-content">
                         <p class="footer-content-title">О компании</p>
                         <p class="footer-about">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur aut,
-                            cupiditate dolore enim est et in iure laborum, nemo nobis omnis placeat porro
-                            quae, quos rem reprehenderit soluta? Consequuntur.
+                            Мы, Группа компаний «Пионер» производим доброкачественные продукты,
+                            радуя тем самым своих потребителей и партнеров. А делаем мы это за счет
+                            качественного сырья, добросовестных и профессиональных сотрудников,
+                            и многолетнего опыта в этой сфере.
                         </p>
                     </div>
                 </div>

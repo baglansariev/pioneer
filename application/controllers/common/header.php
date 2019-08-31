@@ -10,6 +10,7 @@
 		    $data = array();
 		    $data['menu_list'] = $header_model->getMenuList();
 		    $data['popup_form'] = $this->load->controller('modules/popupContactForm');
+		    $data['page'] = '/' . explode('/', $this->request->getUriWithoutParams())[0];
 
 			return $this->load->view('common/header', $data);
 		}

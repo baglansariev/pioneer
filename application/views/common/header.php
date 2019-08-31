@@ -28,9 +28,15 @@
             <nav class="desktop-menu">
                 <ul>
                     <?php foreach ($menu_list as $menu): ?>
-                        <li>
-                            <a href="<?php echo $menu['url'] ?>"><?php echo $menu['name'] ?></a>
-                        </li>
+                        <?php if($menu['url'] == $page): ?>
+                            <li>
+                                <a href="<?php echo $menu['url'] ?>" class="menu-active"><?php echo $menu['name'] ?></a>
+                            </li>
+                        <?php else: ?>
+                            <li>
+                                <a href="<?php echo $menu['url'] ?>"><?php echo $menu['name'] ?></a>
+                            </li>
+                        <?php endif ?>
                     <?php endforeach ?>
                     <li>
                         <a href="" id="feedback">Заказать звонок</a>
@@ -45,7 +51,7 @@
     <div class="header-bottom">
         <div class="container">
             <a href="">
-                Позвонить сейчас:
+                <i class="fas fa-phone-volume"></i>
                 <span>+30 1234 56789</span>
             </a>
             <div class="header-social-icons">
@@ -67,9 +73,15 @@
     <nav class="mobile-menu">
         <ul>
             <?php foreach ($menu_list as $menu): ?>
-                <li>
-                    <a href="<?php echo $menu['url'] ?>"><?php echo $menu['name'] ?></a>
-                </li>
+                <?php if($menu['url'] == $page): ?>
+                    <li>
+                        <a href="<?php echo $menu['url'] ?>" class="menu-active"><?php echo $menu['name'] ?></a>
+                    </li>
+                <?php else: ?>
+                    <li>
+                        <a href="<?php echo $menu['url'] ?>"><?php echo $menu['name'] ?></a>
+                    </li>
+                <?php endif ?>
             <?php endforeach ?>
             <li>
                 <a href="" id="mobile-feedback">Заказать звонок</a>
