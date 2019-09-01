@@ -7,6 +7,7 @@
         public function getList($limit = false)
         {
             $sql = "SELECT "
+                . DB_PREFIX . "product.id AS product_id, "
                 . DB_PREFIX . "product.name AS product_name, "
                 . DB_PREFIX . "product.image AS product_image, "
                 . DB_PREFIX . "product_description.short_desc AS product_short_desc, "
@@ -20,13 +21,19 @@
                 ON " . DB_PREFIX . "type_to_product.type_id = " . DB_PREFIX . "product_type.id 
                 ";
 
-            if(!empty($limit['from']) && !empty($limit['to'])){
-                $sql .= "LIMIT " . $limit['from'] . ", " . $limit['to'];
+            if(isset($limit['from']) && isset($limit['notes'])){
+                $sql .= "LIMIT " . $limit['from'] . ", " . $limit['notes'];
             }
             else if((int)$limit){
                 $sql .= "LIMIT " . $limit;
             }
 
             return $this->db->getAllRows($sql);
+        }
+
+        public function getTotalProducts()
+        {
+            $sql = "SELECT COUNT(*) AS count FROM " . DB_PREFIX . "product";
+            return $this->db->getRow($sql);
         }
     }
