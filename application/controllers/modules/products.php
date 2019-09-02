@@ -14,10 +14,8 @@
             if($pagination){
                 $totalProducts = $products_model->getTotalProducts()['count'];
                 $pagination = new Pagination($limit, $totalProducts, $this->request->getUriWithoutParams());
-                $fromNote = $pagination->getFromNote();
-
                 $data['total_pages'] = $pagination->getTotalPages();
-                $products = $products_model->getList(['from' => $fromNote, 'notes' => $limit]);
+                $products = $products_model->getList(['from' => $$pagination->getFromNote(), 'notes' => $limit]);
             }
 
             $data['products'] = array();

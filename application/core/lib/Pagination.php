@@ -5,12 +5,10 @@
     {
         public $totalNotes;
         public $notesOnPage;
-        public $isUri;
         public $currentPage;
 
         public function __construct($notesOnPage, $totalNotes, $uri)
         {
-            $this->isUri = false;
             $this->notesOnPage = $notesOnPage;
             $this->totalNotes = $totalNotes;
             $this->currentPage = $this->getCurrentPage($uri);
