@@ -14,8 +14,8 @@
             if($pagination){
                 $totalProducts = $products_model->getTotalProducts()['count'];
                 $pagination = new Pagination($limit, $totalProducts, $this->request->getUriWithoutParams());
-                $data['total_pages'] = $pagination->getTotalPages();
-                $products = $products_model->getList(['from' => $$pagination->getFromNote(), 'notes' => $limit]);
+                $data['total_pages'] = $pagination->totalPages;
+                $products = $products_model->getList(['from' => $$pagination->from, 'notes' => $limit]);
             }
 
             $data['products'] = array();
@@ -31,5 +31,27 @@
             }
 
             return $this->load->view('modules/products/product-list', $data);
+        }
+
+        public function ShowOneProduct()
+        {
+            $data = array();
+            $products_model = $this->load->model('modules/products');
+            $product_id = $this->getProductId();
+
+            if((int)$product_id && $products_model->hasProduct($product_id)){
+                $product_info = $products_model->getProductInfo($product_id);
+            }
+        }
+
+        private function getProductId()
+        {
+            $arr = explode('/', $this->request->getUriWithoutParams());
+            $needle = array_search('flour', $arr);
+
+            if($needle){
+                return $arr[$needle + 1];
+            }
+            return false;
         }
     }

@@ -6,12 +6,16 @@
         public $totalNotes;
         public $notesOnPage;
         public $currentPage;
+        public $totalPages;
+        public $from;
 
         public function __construct($notesOnPage, $totalNotes, $uri)
         {
             $this->notesOnPage = $notesOnPage;
             $this->totalNotes = $totalNotes;
             $this->currentPage = $this->getCurrentPage($uri);
+            $this->totalPages = ceil($this->totalNotes / $this->notesOnPage);
+            $this->from = ($this->currentPage - 1) * $this->notesOnPage;
         }
 
         public function getCurrentPage($param)
@@ -23,16 +27,6 @@
                 return $this->pageValidate($arr[$needle + 1]);
             }
             return $this->pageValidate($param);
-        }
-
-        public function getTotalPages()
-        {
-            return ceil($this->totalNotes / $this->notesOnPage);
-        }
-
-        public function getFromNote()
-        {
-            return ($this->currentPage - 1) * $this->notesOnPage;
         }
 
         private function pageValidate($page)
