@@ -36,4 +36,21 @@
             $sql = "SELECT COUNT(*) AS count FROM " . DB_PREFIX . "product";
             return $this->db->getRow($sql);
         }
+
+        public function getProductInfo($product_id)
+        {
+            $sql = "SELECT "
+            . DB_PREFIX . "product.id AS product_id, "
+            . DB_PREFIX . "product.name AS product_name, "
+            . DB_PREFIX . "product.image AS product_image, "
+            . DB_PREFIX . "product_description.full_desc. AS product_desc, "
+            . DB_PREFIX . "package.name. AS package_name, "
+            . DB_PREFIX . "package.name. AS package_name, ";
+        }
+
+        public function hasProduct($product_id)
+        {
+            $sql = "SELECT COUNT(*) AS count FROM " . DB_PREFIX . "product WHERE id = '" . (int)$product_id . "'";
+            return $this->db->getRow($sql);
+        }
     }

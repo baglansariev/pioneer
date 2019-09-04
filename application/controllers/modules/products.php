@@ -39,8 +39,12 @@
             $products_model = $this->load->model('modules/products');
             $product_id = $this->getProductId();
 
-            if((int)$product_id && $products_model->hasProduct($product_id)){
+            if((int)$product_id >0 && $products_model->hasProduct($product_id)){
                 $product_info = $products_model->getProductInfo($product_id);
+
+            }
+            else{
+                $data['message'] = 'Такого продукта нет в наличии!';
             }
         }
 
