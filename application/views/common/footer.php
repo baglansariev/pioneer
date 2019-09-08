@@ -50,12 +50,12 @@
                     <div class="footer-top-content">
                         <p class="footer-content-title">Из Instagram</p>
                         <div class="footer-feed">
-                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/1.jpg')"></a>
-                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/2.jpg')"></a>
-                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/3.jpg')"></a>
-                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/4.jpg')"></a>
-                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/5.jpg')"></a>
-                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/6.jpg')"></a>
+                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/gallery-1.jpg')"></a>
+                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/gallery-2.jpg')"></a>
+                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/gallery-3.jpg')"></a>
+                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/gallery-4.jpg')"></a>
+                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/gallery-5.jpg')"></a>
+                            <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/gallery-6.jpg')"></a>
                         </div>
                     </div>
                 </div>

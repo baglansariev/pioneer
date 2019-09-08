@@ -5,7 +5,7 @@
         <div class="container">
             <h3 class="row-title">Добро пожаловать!</h3>
             <div class="welcome-content row">
-                <div class="welcome-text col-lg-6 col-md-12">
+                <div class="welcome-text col-lg-12">
                     <i>
                         Приветствуя Вас, хочу выразить глубокое уважение на ваше решение о сотрудничестве с нашей компанией.
                     </i>
@@ -23,9 +23,16 @@
                     </i>
 
                 </div>
-                <div class="welcome-image col-lg-6 col-md-12">
-                    <img src="/public/images/vip.png" alt="">
-                </div>
+<!--                <div class="welcome-image col-lg-6 col-md-12">-->
+<!--                    <img src="/public/images/vip.png" alt="">-->
+<!--                </div>-->
+            </div>
+        </div>
+    </section>
+    <section class="about-video">
+        <div class="container">
+            <div class="row">
+                <iframe src="https://www.youtube.com/embed/zywDWlQbPYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>

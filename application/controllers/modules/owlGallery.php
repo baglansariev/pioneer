@@ -4,8 +4,25 @@
 
     class OwlGallery extends Controller
     {
-        public function index()
+        public function getImages($images = array())
         {
-            return $this->load->view('modules/owl-gallery');
+            $owl_model = $this->load->model('modules/owlGallery');
+            $data = array();
+            $data['images'] = array();
+
+            if(!$images){
+                $images = $owl_model->getImages();
+            }
+
+            foreach($images as $key => $image){
+                if(isset($image['src'])){
+                    $data['images'][$key]['src'] = $image['src'];
+                }
+                else if(isset($image['url'])){
+                    $data['images'][$key]['src'] = $image['url'];
+                }
+            }
+
+            return $this->load->view('modules/owl-gallery', $data);
         }
     }

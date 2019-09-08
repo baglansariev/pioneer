@@ -22,6 +22,7 @@
 	<script type="text/javascript" src="/public/style/js/jquery-3.4.0.min.js"></script>
     <script type="text/javascript" src="/public/style/font-awesome/js/all.min.js"></script>
     <script type="text/javascript" src="/public/style/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/public/style/contact-form/masked_input.js"></script>
     <script type="text/javascript" src="/public/style/contact-form/popup-contact-form.js"></script>
 	<? foreach($this->asset->getJs() as $js): ?>
 	<script type="text/javascript" src="<?= $js ?>"></script>

@@ -1,8 +1,6 @@
 <?php echo $header; ?>
     <main>
         <?php echo $page_title; ?>
-        <section>
-            Контент готовится
-        </section>
+        <?php echo $news_list; ?>
     </main>
 <?php echo $footer; ?>

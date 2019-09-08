@@ -1,6 +1,6 @@
 <?php echo $header; ?>
     <main>
-        <?php echo $page_title; ?>
-        <?php echo $products; ?>
+        <?php if(isset($page_title)) echo $page_title; ?>
+        <?php if(isset($page_title)) echo $products; ?>
     </main>
 <?php echo $footer; ?>
