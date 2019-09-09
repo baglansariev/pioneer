@@ -15,7 +15,7 @@
                             </p>
                             <p>
                                 <i class="fas fa-mobile-alt"></i>
-                                <span>+7 (701) 747-60-62</span>
+                                <span>+7 (702) 111-44-66</span>
                             </p>
                             <p>
                                 <i class="fas fa-envelope"></i>

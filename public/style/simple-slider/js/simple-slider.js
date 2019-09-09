@@ -12,9 +12,10 @@ $(function () {
     var timer;
 
     function sliderLeft(){
-        left = left - sliderWidth;
-        if(left < -maxStep){
-            left = 0;
+        clearTimeout(timer);
+        left = left + sliderWidth;
+        if(left > 0){
+            left = -maxStep;
             clearTimeout(timer);
         }
         viewPort.animate({marginLeft: left + 'px'}, 1000);
@@ -23,9 +24,10 @@ $(function () {
     }
 
     function sliderRight(){
-        left = left + sliderWidth;
-        if(left > 0){
-            left = -maxStep;
+        clearTimeout(timer);
+        left = left - sliderWidth;
+        if(left < -maxStep){
+            left = 0;
             clearTimeout(timer);
         }
         viewPort.animate({marginLeft: left + 'px'}, 1000);
@@ -44,7 +46,7 @@ $(function () {
     });
 
     function autoSlider() {
-        timer = setTimeout(sliderLeft, 5000);
+        timer = setTimeout(sliderRight, 5000);
     }
 
 });

@@ -42,12 +42,12 @@
             $this->phpMailer->isSMTP();
             $this->phpMailer->Host = 'smtp.mail.ru';
             $this->phpMailer->SMTPAuth = true;
-            $this->phpMailer->Username = 'baglansariev@mail.ru'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
-            $this->phpMailer->Password = 'bagi50500262102CEREBRO*'; // Ваш пароль
+            $this->phpMailer->Username = 'pioneer-grain@mail.ru'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
+            $this->phpMailer->Password = 'Fromstarnet123!'; // Ваш пароль
             $this->phpMailer->SMTPSecure = 'ssl';
             $this->phpMailer->Port = 465;
-            $this->phpMailer->setFrom('baglansariev@mail.ru'); // Ваш Email
-            $this->phpMailer->addAddress('baglansariev@mail.ru'); // Email получателя
+            $this->phpMailer->setFrom('pioneer-grain@mail.ru'); // Ваш Email
+            $this->phpMailer->addAddress('pioneer-grain@mail.ru'); // Email получателя
             $this->phpMailer->isHTML(true);
         }
 

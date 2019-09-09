@@ -50,9 +50,9 @@
     </div>
     <div class="header-bottom">
         <div class="container">
-            <a href="">
+            <a href="tel:+77021114466">
                 <i class="fas fa-phone-volume"></i>
-                <span>+30 1234 56789</span>
+                <span>+7 702 111 44 66</span>
             </a>
             <div class="header-social-icons">
                 <a href="">
@@ -61,7 +61,7 @@
                 <a href="">
                     <i class="fab fa-vk"></i>
                 </a>
-                <a href="">
+                <a href="mailto:pioneergrain@mail.ru">
                     <i class="fas fa-envelope"></i>
                 </a>
                 <a href="">
