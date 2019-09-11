@@ -62,9 +62,9 @@ header{
 .header-mid{
 	width: 100%;
 	height: 100px;
-	background-color: #FFDC01;
+	background-color: #f8f8f8;
 	position: relative;
-	/*border-bottom: 1px solid #E30016;*/
+	border-bottom: 1px solid #ebebeb;
 }
 .header-mid::after{
 	content: '';
@@ -131,7 +131,7 @@ header{
 	display: flex;
 	align-items: center;
 	list-style-type: none;
-	color: #fff;
+	color: #4e555b;
 	font-size: 17px;
 	font-weight: bold;
 }
@@ -145,12 +145,15 @@ header{
 }
 .desktop-menu ul li a:hover{
 	background-color: #E30016;
+	color: #fff;
 }
 .menu-active{
 	background-color: #E30016;
+	color: #fff;
 }
 #feedback{
 	background-color: #E30016;
+	color: #fff;
 	margin-left: 20px;
 	-webkit-transition: all ease 0.4s;
 	-moz-transition: all ease 0.4s;

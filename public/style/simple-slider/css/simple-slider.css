@@ -31,14 +31,20 @@
     /*box-shadow: 0 0 5px 1px #373737;*/
 }
 .slider-title{
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
+    /*text-transform: uppercase;*/
     -webkit-transform: skew(27deg, 0);
     -moz-transform: skew(27deg, 0);
     -ms-transform: skew(27deg, 0);
     -o-transform: skew(27deg, 0);
     transform: skew(27deg, 0);
+}
+.slider-text h1:first-of-type{
+
 }
 .slider-buttons{
     display: flex;

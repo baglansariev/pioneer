@@ -8,6 +8,7 @@
 	<meta name="keywords" content="<?= $this->asset->getMetaKeys() ?>">
 	<title><?= $this->asset->getTitle() ?></title>
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link  rel="stylesheet" href="/public/style/font-awesome/css/all.min.css">
 	<link rel="shortcut icon" href="/public/images/icons/favicon.png" type="image/x-icon">
     <link  rel="stylesheet" href="/public/style/owl-carousel/owl.carousel.min.css">
