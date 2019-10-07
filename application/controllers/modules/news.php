@@ -37,7 +37,7 @@
         public function article()
         {
             $article_id = $this->getArticleId();
-            $owl_gallery = new OwlGallery;
+            $owl_gallery = new owlGallery;
             $data = array();
             $data['article'] = array();
 

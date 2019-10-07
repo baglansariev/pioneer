@@ -8,9 +8,9 @@
 
 	    public function indexAction()
 	    {
-	    	$this->view->asset->setMetaDesc('Тестовое описание');
-	    	$this->view->asset->setMetaKeys('ключ1, ключ2');
-	    	$this->view->asset->setTitle('Главная');
+	    	$this->view->asset->setMetaDesc('Производство муки ПИОНЕР');
+//	    	$this->view->asset->setMetaKeys('ключ1, ключ2');
+	    	$this->view->asset->setTitle('ПИОНЕР');
             $this->view->asset->setCss('/public/style/simple-slider/css/simple-slider.css');
             $this->view->asset->setCss('/public/style/products/products.css');
             $this->view->asset->setCss('/public/style/news/news.css');
