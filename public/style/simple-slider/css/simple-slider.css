@@ -28,15 +28,13 @@
     transform: skew(-27deg, 0);
     right: -50px;
     bottom: 0;
-    /*box-shadow: 0 0 5px 1px #373737;*/
 }
 .slider-title{
-    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Caption', sans-serif;
     letter-spacing: 2px;
     margin-right: 50px;
     font-size: 30px;
     color: #fff;
-    /*text-transform: uppercase;*/
     -webkit-transform: skew(27deg, 0);
     -moz-transform: skew(27deg, 0);
     -ms-transform: skew(27deg, 0);

@@ -266,6 +266,16 @@ header{
 	text-transform: uppercase;
 	margin-bottom: 40px;
 	margin-top: 20px;
+	position: relative;
+	display: flex;
+}
+.row-title::before{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	width: 200px;
+	border-bottom: 3px solid #E30016;
 }
 .call-to-action{
 	width: 100%;
@@ -424,7 +434,7 @@ footer .container{
 	flex-direction: column;
 	margin-bottom: 20px;
 }
-.welcome-text i{
+.welcome-text i, .welcome-text p{
 	margin-bottom: 10px;
 }
 .welcome-image{
