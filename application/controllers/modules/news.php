@@ -1,7 +1,7 @@
 <?php
     namespace controllers\modules;
     use core\engine\Controller;
-    use controllers\modules\OwlGallery;
+    use controllers\modules\owlGallery;
     use core\lib\Pagination;
 
     class News extends Controller
@@ -37,7 +37,7 @@
         public function article()
         {
             $article_id = $this->getArticleId();
-            $owl_gallery = new owlGallery;
+            $owl_gallery = new OwlGallery;
             $data = array();
             $data['article'] = array();
 
