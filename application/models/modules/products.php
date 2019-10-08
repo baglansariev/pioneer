@@ -32,7 +32,7 @@
                 ON " . DB_PREFIX . "type_to_product.product_id = " . DB_PREFIX . "product.id 
                 LEFT JOIN " . DB_PREFIX . "product_type 
                 ON " . DB_PREFIX . "type_to_product.type_id = " . DB_PREFIX . "product_type.id 
-                ";
+                ORDER BY " . DB_PREFIX . "product.sort_order ";
 
             if(isset($limit['from']) && isset($limit['notes'])){
                 $sql .= "LIMIT " . $limit['from'] . ", " . $limit['notes'];
