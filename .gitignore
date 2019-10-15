@@ -2,3 +2,5 @@
 .phpintel
 vendor
 application/core/error.log
+sitemap.xml
+config.php
