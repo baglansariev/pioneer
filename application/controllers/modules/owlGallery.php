@@ -17,9 +17,11 @@
             foreach($images as $key => $image){
                 if(isset($image['src'])){
                     $data['images'][$key]['src'] = $image['src'];
+                    $data['images'][$key]['thumbnail'] = $image['thumbnail'];
                 }
                 else if(isset($image['url'])){
                     $data['images'][$key]['src'] = $image['url'];
+                    $data['images'][$key]['thumbnail'] = $image['thumbnail'];
                 }
             }
 
