@@ -1,7 +1,7 @@
 <section class="feature-boxes">
     <div class="container">
         <?php if(isset($featureboxes)): ?>
-            <h3 class="row-title">Почему выбирают нас?</h3>
+            <h3 class="row-title"><?php echo $local_module_title; ?></h3>
             <div class="row">
                 <?php foreach($featureboxes as $featurebox): ?>
                     <div class="feature-box col-lg-4 col-md-6 col-sm-12">

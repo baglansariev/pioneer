@@ -1,8 +1,8 @@
 <section class="products">
     <div class="container">
-        <h3 class="row-title">Наша продукция</h3>
+        <h3 class="row-title"><?php echo $local_module_title; ?></h3>
         <div class="products-list">
-            <?php if($products): ?>
+            <?php if(isset($products)): ?>
                 <?php foreach ($products as $product): ?>
                     <div class="product">
                         <a href="/products/flour/<?php echo $product['id'] ?>" class="product-image" style="background-image: url('<?php echo $product['image'] ?>')"></a>

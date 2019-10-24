@@ -5,13 +5,21 @@
 
     class NewsController extends Controller
     {
+        public $lang;
+
+        public function __construct()
+        {
+            parent::__construct();
+            $this->lang = $this->load->language('pages/news');
+        }
+
         public function indexAction()
         {
-            $this->view->asset->setTitle('Новости');
+            $this->view->asset->setTitle($this->lang->get('local_page_title'));
             $this->view->asset->setCss('/public/style/news/news.css');
 
             $data = array();
-            $data['page_title'] = $this->load->controller('modules/pageTitle')->getPageTitle('Новости');
+            $data['page_title'] = $this->load->controller('modules/pageTitle')->getPageTitle($this->lang->get('local_page_title'));
             $data['news_list'] = $this->load->controller('modules/news')->getList(6, true);
             $data['header'] = $this->load->controller('common/header');
             $data['footer'] = $this->load->controller('common/footer');
@@ -21,7 +29,7 @@
 
         public function articleAction()
         {
-            $this->view->asset->setTitle('Новости');
+            $this->view->asset->setTitle($this->lang->get('local_page_title'));
             $this->view->asset->setCss('/public/style/news/news.css');
             $this->view->asset->setCss('/public/style/owl-carousel/owl-gallery.css');
             $this->view->asset->setJs('/public/style/owl-carousel/owl-carousel-switcher.js');

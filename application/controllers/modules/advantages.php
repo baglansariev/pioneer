@@ -7,8 +7,9 @@
         public function index()
         {
             $data = array();
+            $language = $this->load->language();
             $advantages_model = $this->load->model('modules/advantages');
-            $advantages = $advantages_model->getList();
+            $advantages = $advantages_model->getList($language->language_id);
 
             $data['advantages'] = array();
             if($advantages){

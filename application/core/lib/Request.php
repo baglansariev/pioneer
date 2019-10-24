@@ -1,6 +1,5 @@
-<?
+<?php
     namespace core\lib;
-
     use core\lib\Session;
 
     class Request
@@ -9,6 +8,7 @@
         public $post = array();
         public $request = array();
         public $files = array();
+        public $cookie = array();
         public $session;
         private $uri;
 
@@ -19,6 +19,7 @@
             $this->post = $this->getValue($_POST);
             $this->request = $this->getValue($_REQUEST);
             $this->files = $this->getValue($_FILES);
+            $this->cookie = $this->getValue($_COOKIE);
             $this->session = new Session;
         }
 
@@ -60,5 +61,11 @@
         private function getValue($data)
         {
             return $data;
+        }
+
+        public function cookieSet($name, $value, $life_time = 60*60*24)
+        {
+            $life_time = time() + $life_time;
+            setcookie($name, $value, $life_time);
         }
     }

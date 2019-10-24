@@ -5,17 +5,25 @@
 
     class Products extends Controller
     {
+        public $lang;
+
+        public function __construct()
+        {
+            parent::__construct();
+            $this->lang = $this->load->language('modules/products');
+        }
+
         public function getList($limit = false, $pagination = false)
         {
             $data = array();
             $products_model = $this->load->model('modules/products');
-            $products = $products_model->getList($limit);
+            $products = $products_model->getList($limit, $this->lang->language_id);
 
             if($pagination){
                 $totalProducts = $products_model->getTotalProducts()['count'];
                 $pagination = new Pagination($limit, $totalProducts, $this->request->getUriWithoutParams());
                 $data['total_pages'] = $pagination->totalPages;
-                $products = $products_model->getList(['from' => $pagination->from, 'notes' => $limit]);
+                $products = $products_model->getList(['from' => $pagination->from, 'notes' => $limit], $this->lang->language_id);
             }
 
             $data['products'] = array();
@@ -29,6 +37,8 @@
                     $data['products'][$key]['type'] = $product['product_type'];
                 }
             }
+
+            $data['local_module_title'] = $this->lang->get('local_module_title');
 
             return $this->load->view('modules/products/product-list', $data);
         }
@@ -76,6 +86,8 @@
             else{
                 $data['message'] = 'Такого продукта нет в наличии!';
             }
+
+            $data['local_product_description'] = $this->lang->get('local_product_description');
 
             return $this->load->view('modules/products/product', $data);
         }

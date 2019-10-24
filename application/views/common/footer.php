@@ -3,10 +3,10 @@
             <div class="footer-top row">
                 <div class="footer-col col-lg-4 col-md-6 col-sm-12">
                     <div class="footer-top-content">
-                        <p class="footer-content-title">Контакты</p>
+                        <p class="footer-content-title"><?php echo $local_contacts_col_title; ?></p>
                         <p class="footer-contacts">
-                            <span>Мы находимся по адресу:</span>
-                            <span>160000 РК, г.Шымкент, ул. Капал батыра 123 (5 км)</span>
+                            <span><?php echo $local_footer_contacts_title; ?></span>
+                            <span><?php echo $local_footer_contacts; ?></span>
                         </p>
                         <div class="footer-networks">
                             <p>
@@ -37,18 +37,15 @@
                 </div>
                 <div class="footer-col col-lg-4 col-md-6 col-sm-12">
                     <div class="footer-top-content">
-                        <p class="footer-content-title">О компании</p>
+                        <p class="footer-content-title"><?php echo $local_about_col_title; ?></p>
                         <p class="footer-about">
-                            Мы, Группа компаний «Пионер» производим доброкачественные продукты,
-                            радуя тем самым своих потребителей и партнеров. А делаем мы это за счет
-                            качественного сырья, добросовестных и профессиональных сотрудников,
-                            и многолетнего опыта в этой сфере.
+                            <?php echo $local_about_col_text; ?>
                         </p>
                     </div>
                 </div>
                 <div class="footer-col col-lg-4 col-md-6 col-sm-12">
                     <div class="footer-top-content">
-                        <p class="footer-content-title">Из Instagram</p>
+                        <p class="footer-content-title"><?php echo $local_instagram_col_title; ?></p>
                         <div class="footer-feed">
                             <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/thumbnails/gallery-1.jpg')"></a>
                             <a href="" class="footer-feed-image" style="background-image: url('/public/images/owl-gallery/thumbnails/gallery-2.jpg')"></a>
@@ -64,10 +61,10 @@
         <div class="footer-bottom">
             <div class="footer-sign container">
                 <span class="client-sign">
-                    &copy; <a href="/">ПИОНЕР</a> <?php echo date('Y') ?> г. Все права защищены.
+                    &copy; <a href="/">ПИОНЕР</a> <?php echo date('Y') . ' ' . $local_copyright; ?>.
                 </span>
                 <span class="developer-sign">
-                    Разработка и поддержка сайта - <a href="">STARNET.KZ</a>
+                    <?php echo $local_dev_sign; ?> - <a href="">STARNET.KZ</a>
                 </span>
             </div>
         </div>

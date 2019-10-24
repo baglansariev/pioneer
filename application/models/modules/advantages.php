@@ -4,9 +4,9 @@
 
     class Advantages extends Model
     {
-        public function getList()
+        public function getList($language_id)
         {
-            $sql = "SELECT * FROM " . DB_PREFIX . "advantages";
+            $sql = "SELECT * FROM " . DB_PREFIX . "advantages WHERE language_id = " . (int)$language_id;
             return $this->db->getAllRows($sql);
         }
     }

@@ -7,8 +7,9 @@
         public function index()
         {
             $data = array();
+            $language = $this->load->language('modules/featureBox');
             $featurebox_model = $this->load->model('modules/featureBox');
-            $featureboxes = $featurebox_model->getList();
+            $featureboxes = $featurebox_model->getList($language->language_id);
 
             $data['featureboxes'] = array();
 
@@ -20,6 +21,8 @@
                     $data['featureboxes'][$key]['text'] = $featurebox['text'];
                 }
             }
+
+            $data['local_module_title'] = $language->get('local_module_title');
 
             return $this->load->view('modules/feature-box', $data);
         }

@@ -4,9 +4,9 @@
 
     class Header extends Model
     {
-        public function getMenuList()
+        public function getMenuList($language_id)
         {
-            $sql = "SELECT * FROM " . DB_PREFIX . "menu ORDER BY sort";
+            $sql = "SELECT * FROM " . DB_PREFIX . "menu WHERE language_id = " . (int)$language_id . " ORDER BY sort";
             return $this->db->getAllRows($sql);
         }
     }

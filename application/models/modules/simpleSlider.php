@@ -4,9 +4,9 @@
 
     class SimpleSlider extends Model
     {
-        public function getSliderData()
+        public function getSliderData($language_id)
         {
-            $sql = "SELECT * FROM " . DB_PREFIX . "simple_slider ORDER BY sort";
+            $sql = "SELECT * FROM " . DB_PREFIX . "simple_slider WHERE language_id = " . (int)$language_id . " ORDER BY sort";
             return $this->db->getAllRows($sql);
         }
     }

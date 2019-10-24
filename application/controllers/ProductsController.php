@@ -5,13 +5,21 @@
 
     class ProductsController extends Controller
     {
+        public $lang;
+
+        public function __construct()
+        {
+            parent::__construct();
+            $this->lang = $this->load->language('pages/products');
+        }
+
         public function indexAction()
         {
-            $this->view->asset->setTitle('Наша продукция');
+            $this->view->asset->setTitle($this->lang->get('local_page_title'));
             $this->view->asset->setCss('/public/style/products/products.css');
 
             $data = array();
-            $data['page_title'] = $this->load->controller('modules/pageTitle')->getPageTitle('Наша продукция');
+            $data['page_title'] = $this->load->controller('modules/pageTitle')->getPageTitle($this->lang->get('local_page_title'));
             $data['products'] = $this->load->controller('modules/products')->getList();
             $data['header'] = $this->load->controller('common/header');
             $data['footer'] = $this->load->controller('common/footer');
@@ -21,7 +29,7 @@
 
         public function showOneProductAction()
         {
-            $this->view->asset->setTitle('Наша продукция');
+            $this->view->asset->setTitle($this->lang->get('local_page_title'));
             $this->view->asset->setMetaDesc('Продукция компании Pioneer Grain Products');
             $this->view->asset->setCss('/public/style/products/products.css');
             $data = array();

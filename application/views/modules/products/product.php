@@ -48,7 +48,7 @@
                     </div>
                     <div class="product-full-desc col-lg-12">
                         <p class="full-desc-title">
-                            Описание продукта
+                            <?php echo $local_product_description; ?>
                         </p>
                         <p class="full-desc-text">
                             <?php echo $product['desc'] ?>

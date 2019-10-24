@@ -17,7 +17,7 @@
             return $this->db->getAllRows($sql);
         }
 
-        public function getList($limit = false)
+        public function getList($limit = false, $language_id = 1)
         {
             $sql = "SELECT "
                 . DB_PREFIX . "product.id AS product_id, "
@@ -32,6 +32,7 @@
                 ON " . DB_PREFIX . "type_to_product.product_id = " . DB_PREFIX . "product.id 
                 LEFT JOIN " . DB_PREFIX . "product_type 
                 ON " . DB_PREFIX . "type_to_product.type_id = " . DB_PREFIX . "product_type.id 
+                WHERE " . DB_PREFIX . "product.language_id = " . (int)$language_id . "
                 ORDER BY " . DB_PREFIX . "product.sort_order ";
 
             if(isset($limit['from']) && isset($limit['notes'])){
