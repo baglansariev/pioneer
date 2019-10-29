@@ -11,6 +11,8 @@
 
             $data['local_feedback_name'] = $language->get('local_feedback_name');
             $data['local_feedback_phone'] = $language->get('local_feedback_phone');
+            $data['local_feedback_email'] = $language->get('local_feedback_email');
+            $data['local_feedback_captcha'] = $language->get('local_feedback_captcha');
             $data['local_feedback_msg'] = $language->get('local_feedback_msg');
             $data['local_feedback_send'] = $language->get('local_feedback_send');
 

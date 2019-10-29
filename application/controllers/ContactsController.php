@@ -18,6 +18,8 @@
             $data['local_contact_form_title'] = $language->get('local_contact_form_title');
             $data['local_contact_form_name'] = $language->get('local_contact_form_name');
             $data['local_contact_form_phone'] = $language->get('local_contact_form_phone');
+            $data['local_contact_form_email'] = $language->get('local_contact_form_email');
+            $data['local_contact_form_captcha'] = $language->get('local_contact_form_captcha');
             $data['local_contact_form_msg'] = $language->get('local_contact_form_msg');
             $data['local_contact_form_send'] = $language->get('local_contact_form_send');
             $data['local_map_title'] = $language->get('local_map_title');

@@ -1,4 +1,4 @@
 <?php
     return [
-        'local_page_title' => 'Наша продукция',
+        'local_page_title' => '我们产品',
     ];

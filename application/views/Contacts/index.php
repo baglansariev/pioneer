@@ -31,8 +31,8 @@
                                 <input type="text" name="client_number" placeholder="<?php echo $local_contact_form_phone; ?>" class="phone_mask" required>
                             </div>
                             <div class="client-data">
-                                <input type="text" name="client_email" placeholder="E-mail" required>
-                                <input type="text" name="client_captcha" placeholder="3 x 3 = ?" required>
+                                <input type="text" name="client_email" placeholder="<?php echo $local_contact_form_email; ?>" required>
+                                <input type="text" name="client_captcha" placeholder="<?php echo $local_contact_form_captcha; ?>" required>
                             </div>
                             <div class="client-data">
                                 <textarea name="client_text" placeholder="<?php echo $local_contact_form_msg; ?>"></textarea>

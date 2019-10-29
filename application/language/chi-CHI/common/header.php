@@ -1,4 +1,4 @@
 <?php
     return [
-        'local_feedback' => '回电',
+        'local_feedback' => '电话申请',
     ];

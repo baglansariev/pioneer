@@ -58,9 +58,7 @@
                     </a>
                     <div class="language-list">
                         <?php foreach($languages as $language): ?>
-                            <?php if($language['id'] !== '4'): ?>
-                                <a href="/<?php echo $language['link']; ?>" class="lang <?php echo $language['class']; ?>"><?php echo $language['name']; ?></a>
-                            <?php endif; ?>
+                            <a href="/<?php echo $language['link']; ?>" class="lang <?php echo $language['class']; ?>"><?php echo $language['name']; ?></a>
                         <?php endforeach;?>
                     </div>
                 </div>

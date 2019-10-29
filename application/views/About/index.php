@@ -3,7 +3,7 @@
     <?php echo $page_title; ?>
     <section class="welcome">
         <div class="container">
-            <h3 class="row-title"><?php $local_welocme_title; ?></h3>
+            <h3 class="row-title"><?php echo $local_welocme_title; ?></h3>
             <div class="welcome-content row">
                 <?php if(isset($local_welcome_text)): ?>
                     <div class="welcome-text col-lg-12">
